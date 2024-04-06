@@ -1,0 +1,60 @@
+@import '../style/variable.scss';
+@import '../style/ui.scss';
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+/* html {} */
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	color: $mainBackground;
+}
+
+a,
+span,
+p,
+b,
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: $colorSpanText;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 30px;
+}
+
+a {
+	text-decoration: none;
+
+}
+
+body {
+	background-color: $mainBackground;
+
+	&::-webkit-scrollbar {
+		width: 5px;
+	}
+}
+
+button {
+	outline: none;
+	transition: .4s;
+	cursor: pointer;
+}

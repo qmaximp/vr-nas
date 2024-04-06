@@ -1,0 +1,38 @@
+@import '../../style/variable.scss';
+@import '../../style/breaks.scss';
+
+.header {
+	border-bottom: 2px solid #CBCBCB;
+	padding: 0 0 20px 0;
+
+	&__desktop {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		gap: 100px;
+
+		a {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		ul {
+			display: flex;
+			align-items: center;
+			gap: 25px;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 25px;
+		align-items: center;
+	}
+
+	&__mobile {}
+}

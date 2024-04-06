@@ -1,0 +1,27 @@
+@import '../style/variable.scss';
+
+.emptyButton {
+	background: none;
+	color: $colorBlackText;
+	padding: 15px;
+	border-radius: 15px;
+	font-weight: 700;
+
+	&:hover {
+		background: $addBackground;
+		color: $colorWhiteText;
+	}
+}
+
+.fullButton {
+	background: $addBackground;
+	color: $colorWhiteText;
+	padding: 15px;
+	border-radius: 15px;
+	font-weight: 700;
+
+	&:hover {
+		background: none;
+		color: $colorBlackText;
+	}
+}
