@@ -9,16 +9,15 @@ const Button = ({ children, type, className }: Props) => {
 	if (type) {
 		return (
 			<button className={
-				type === "empty"
-					? `emptyButton ${className}`
-					: `fullButton ${className}`
+				type == "empty"
+					? `emptyButton ${className}` : type == "border" ? `borderButton ${className}` : type == "full" ? `fullButton ${className}` : ''
 			}>
 				{children}
 			</button >
 		);
 	} else {
 		return (
-			<button className={className}>{children}</ button>
+			<button className={className}> {children} </ button>
 		)
 	}
 };
