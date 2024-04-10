@@ -18,15 +18,14 @@ body {
 	color: $mainBackground;
 }
 
-a,
+
 span,
 b,
-h1,
 h2,
 h3,
 h4,
 h5 {
-	color: $colorSpanText;
+	color: $addBackground;
 
 	&>span {
 		color: $addBackground;
@@ -37,11 +36,46 @@ h5 {
 
 a {
 	text-decoration: none;
+	color: $colorGreyText;
 
+	&>span {
+		color: $addBackground;
+	}
+}
+
+
+
+h1 {
+	color: $colorBlackText;
+	font-size: 4em;
+
+	&>span {
+		color: $addBackground;
+	}
+}
+
+h2 {
+	color: $colorBlackText;
+	font-size: 3em;
+
+	&>span {
+		color: $addBackground;
+	}
 }
 
 p {
 	color: $colorGreyText;
+	opacity: 0.7;
+
+	&>span {
+		color: $addBackground;
+	}
+}
+
+li {
+	color: $colorGreyText;
+	opacity: 0.7;
+	text-decoration: dotted;
 
 	&>span {
 		color: $addBackground;

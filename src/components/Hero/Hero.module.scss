@@ -1,2 +1,49 @@
 @import '../../style/variable.scss';
 @import '../../style/breaks.scss';
+
+.hero {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+
+	&__infoBlock {
+
+
+		>.infoBlock__top {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			margin-bottom: 0.5em;
+
+			>span {
+				opacity: 0.3;
+				width: 45px;
+				height: 2px;
+				background: $colorGreyText;
+			}
+
+			>p {
+				font-size: 0.9em;
+			}
+		}
+
+		>.infoBlock__header {
+			margin-bottom: 1em;
+		}
+
+		>.infoBlock__text {
+			margin-bottom: 1.5em;
+
+			>p {
+				font-size: 1.2em;
+			}
+		}
+
+		>.infoBlock__button {
+			display: flex;
+			gap: 20px;
+		}
+
+		>.infoBlock__reviews {}
+	}
+}

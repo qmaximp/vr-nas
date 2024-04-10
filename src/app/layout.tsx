@@ -1,9 +1,12 @@
-import Wrapper from "@/components/Wrapper/Wrapper";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from 'next/font/google';
 import '../style/globals.scss';
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+	weight: '700',
+	subsets: ['latin'],
+	variable: '--font-poppins',
+});
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -17,10 +20,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
-				<Wrapper>
-					{children}
-				</Wrapper>
+			<body className={poppins.className}>
+
+				{children}
+
 			</body>
 		</html>
 	);

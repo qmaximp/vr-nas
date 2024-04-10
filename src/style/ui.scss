@@ -16,19 +16,21 @@
 .fullButton {
 	background: $addBackground;
 	color: $colorWhiteText;
-	padding: 17px;
+	padding: 15px;
 	border-radius: 15px;
 	font-weight: 700;
+	border: 2px solid $addBackground;
 
 	&:hover {
 		background: none;
 		color: $colorBlackText;
+
 	}
 }
 
 .borderButton {
 	background: none;
-	color: $colorBlackText;
+	color: $addBackground;
 	padding: 15px;
 	border-radius: 15px;
 	border: 2px solid $addBackground;

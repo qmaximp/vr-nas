@@ -1,0 +1,41 @@
+@import '../../style/variable.scss';
+@import '../../style/breaks.scss';
+
+.features {
+	background-color: $addBackground;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 6em;
+
+
+	&__list {
+		display: flex;
+		padding: 50px 0;
+		gap: 40px;
+
+		>div {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			align-content: center;
+			flex-direction: column;
+
+			>h3 {
+				font-size: 3em;
+				color: $colorWhiteText;
+			}
+
+			>p {
+				color: $colorWhiteText;
+			}
+		}
+
+		>span {
+			width: 2px;
+			height: auto;
+			background: $colorWhiteText;
+
+		}
+	}
+}
