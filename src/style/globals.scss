@@ -63,6 +63,15 @@ h2 {
 	}
 }
 
+h4 {
+	color: $colorBlackText;
+	font-size: 1.5em;
+
+	&>span {
+		color: $addBackground;
+	}
+}
+
 p {
 	color: $colorGreyText;
 	opacity: 0.7;

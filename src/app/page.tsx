@@ -4,6 +4,7 @@ import Image from "next/image";
 import Wrapper from "@/components/Wrapper/Wrapper";
 import Features from "@/components/Features/Features";
 import DownloadApp from "@/components/DownloadApp/DownloadApp";
+import RestaurantCatalog from "@/components/Catalog/RestaurantCatalog/RestaurantCatalog";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
 			<Features />
 			<Wrapper>
 				<DownloadApp />
+				<RestaurantCatalog />
 			</Wrapper>
 		</main>
 	);

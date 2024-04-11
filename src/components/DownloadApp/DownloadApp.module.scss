@@ -4,6 +4,8 @@
 .downloadApp {
 	display: flex;
 	justify-content: space-around;
+	border-bottom: 2px solid $colorGreyLine;
+	padding-bottom: 3em;
 
 
 	&__text {

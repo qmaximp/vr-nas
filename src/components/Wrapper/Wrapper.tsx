@@ -1,10 +1,8 @@
 import React from 'react';
 import css from './Wrapper.module.scss'
 
-interface Props {
-	children?: any
-}
-const Wrapper = ({ children }: Props) => {
+
+const Wrapper = ({ children }: { children: any }) => {
 	return (
 		<div className={css.wrapper} >
 			{children}
